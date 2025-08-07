@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import TodoItem from "./TodoItem";
 function TodoList() {
     const [tasks, setTasks] = useState([
         {
@@ -22,9 +23,9 @@ function TodoList() {
 
     function addTask(text) {
         const newTask = {
-            id: Date.now(),
+            taskId: Date.now(),
             text,
-            completed: false
+            isComplete: false
         };
         setTasks([...tasks, newTask]);
         setText('');
@@ -47,7 +48,7 @@ function TodoList() {
     return (
         <div className="todo-list">
             {tasks.map(task => (
-                <TodoItem 
+                <TodoItem
                 key = {task.taskId}
                 task = {task}
                 deleteTask = {deleteTask}
@@ -55,8 +56,8 @@ function TodoList() {
                 />
             ))}
             <input
-            value = {text}
-            onChange={e => setText(e.target.value)}
+             value = {text}
+             onChange={e => setText(e.target.value)}
             />
             <button onClick={() => addTask(text)}>Add</button>
         </div>
