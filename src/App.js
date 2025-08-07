@@ -1,25 +1,15 @@
 import React from 'react';
 import './App.css';
-import TodoList from './components/TodoList.js'; // Assuming you have a TodoList component
+import TodoList from './components/TodoList.js';
 
 function App() {
   return (
+    <><header className="App-header">
+      <h1>Todo Extension Refresher</h1>
+    </header>
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer" 
-        >
-          Learn React
-        </a>
-      </header>
-      {/* <TodoList /> */}
-    </div>
+      <TodoList />
+    </div></>
   );
 }
 
