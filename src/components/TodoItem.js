@@ -1,7 +1,6 @@
 import React from 'react'
 function TodoItem({task, deleteTask, toggleIsComplete}) {
     function handleChange() {
-        React.log('Checkbox toggled for task:', task.taskId);
         toggleIsComplete(task.taskId);
     }
 

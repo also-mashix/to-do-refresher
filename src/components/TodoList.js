@@ -52,7 +52,7 @@ function TodoList() {
                 key = {task.taskId}
                 task = {task}
                 deleteTask = {deleteTask}
-                togggleIsComplete = {togggleIsComplete}
+                toggleIsComplete = {togggleIsComplete}
                 />
             ))}
             <input 
