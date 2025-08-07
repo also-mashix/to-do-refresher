@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import TodoList from './components/TodoList'; // Assuming you have a TodoList component
+import TodoList from './components/TodoList.js'; // Assuming you have a TodoList component
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer" 
         >
           Learn React
         </a>

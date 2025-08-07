@@ -16,3 +16,95 @@
 .App-link {
   color: #61dafb;
 }
+
+.TodoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.TodoList li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TodoList li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.TodoList li button {
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.TodoList li button:hover {
+  background-color: #21a1f1;
+}
+.TodoList input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.TodoList input[type="text"] {
+  width: 200px;
+}
+.TodoList input[type="checkbox"] {
+  margin-right: 10px;
+}
+.TodoList .add-task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.TodoList .add-task input {
+  flex: 1;
+  margin-right: 10px;
+}
+.TodoList .add-task button {
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.TodoList .add-task button:hover {
+  background-color: #21a1f1;
+}
+.TodoList .task-count {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #888;
+}
+.TodoList .task-count span {
+  font-weight: bold;
+}
+.TodoList .task-count.completed {
+  color: #61dafb;
+}
+.TodoList .task-count.pending {
+  color: #f39c12;
+}
+.TodoList .task-count.total {
+  color: #2ecc71;
+}
+.TodoList .task-count .count {
+  font-weight: bold;
+  color: #61dafb;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.todo-item p {
+  color: #333;
+  text-decoration: line-through;
+}
